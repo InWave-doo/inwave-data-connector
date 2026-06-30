@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — InWave Data Connector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #1a1a2e;
+      background: #fafafa;
+      line-height: 1.7;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 48px 0 40px;
+      border-bottom: 1px solid #e8e8ec;
+    }
+    .logo {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #6366f1;
+      text-transform: uppercase;
+    }
+    .logo a { color: inherit; text-decoration: none; }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 24px 0 8px;
+    }
+    .updated {
+      font-size: 14px;
+      color: #9393a8;
+    }
+    section {
+      padding: 32px 0;
+      border-bottom: 1px solid #e8e8ec;
+    }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #3a3a52;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 8px 0 12px 20px;
+      font-size: 15px;
+      color: #3a3a52;
+    }
+    li { margin-bottom: 6px; }
+    a { color: #6366f1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      padding: 32px 0;
+      border-top: 1px solid #e8e8ec;
+      font-size: 13px;
+      color: #9393a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><a href="./">InWave</a></div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: June 30, 2026</p>
+    </header>
+
+    <section>
+      <h2>Who we are</h2>
+      <p>InWave Data Connector ("the App") is operated by InWave d.o.o.,
+      a consulting company registered in Slovenia. This policy explains what
+      data the App accesses, how it is used, and how it is protected.</p>
+    </section>
+
+    <section>
+      <h2>What data we access</h2>
+      <p>When you install the App on your Shopify store, it requests
+      <strong>read-only</strong> access to the following data through the
+      Shopify Admin API:</p>
+      <ul>
+        <li>Orders (order totals, dates, payment status, fulfillment status)</li>
+        <li>Products (titles, types, vendors, status)</li>
+        <li>Customers (email addresses, order counts, total spent)</li>
+        <li>Inventory, locations, fulfillments, price rules, discounts, returns
+        (metadata only)</li>
+        <li>Store analytics</li>
+      </ul>
+      <p>The App <strong>does not</strong> modify, create, or delete any data in
+      your Shopify store. All API access is strictly read-only.</p>
+    </section>
+
+    <section>
+      <h2>How we use your data</h2>
+      <p>Your store data is used solely to generate analytics and dashboards for
+      you. Specifically, the App:</p>
+      <ul>
+        <li>Extracts raw data from the Shopify API on a scheduled basis
+        (typically once per day).</li>
+        <li>Cleans, validates, and transforms the data into structured analytics
+        tables (revenue trends, order metrics, store summaries).</li>
+        <li>Presents these analytics to you through a dashboard interface.</li>
+      </ul>
+      <p>Your data is <strong>never used</strong> for advertising, marketing,
+      profiling, or any purpose other than providing analytics to you.</p>
+    </section>
+
+    <section>
+      <h2>Data storage and security</h2>
+      <p>Your data is stored in a secure, private data lake accessible only to
+      you and the InWave team managing your analytics setup. Data is encrypted
+      in transit (HTTPS/TLS) and access is controlled through authentication
+      tokens and cloud security policies.</p>
+      <p>We do not store Shopify API credentials in plaintext. Access tokens
+      are managed through secure credential stores (OS keyring or cloud-based
+      secrets management such as Azure Key Vault).</p>
+    </section>
+
+    <section>
+      <h2>Data sharing</h2>
+      <p>We do <strong>not</strong> sell, rent, or share your store data with
+      any third party. Your data is used exclusively to provide analytics
+      services to you.</p>
+      <p>Data may be processed by cloud infrastructure providers (such as
+      Microsoft Azure or Amazon Web Services) solely for hosting and computation
+      purposes, subject to their own security and privacy standards.</p>
+    </section>
+
+    <section>
+      <h2>Data retention</h2>
+      <p>Your data is retained for as long as the App is installed on your
+      store and our analytics service is active. If you uninstall the App or
+      terminate the service, we will delete your store data within 30 days of
+      your request.</p>
+    </section>
+
+    <section>
+      <h2>Your rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Request a copy of the data we hold about your store.</li>
+        <li>Request deletion of your data at any time.</li>
+        <li>Revoke the App's access by uninstalling it from your Shopify store.</li>
+      </ul>
+      <p>Uninstalling the App immediately revokes its API access token,
+      preventing any further data retrieval.</p>
+    </section>
+
+    <section>
+      <h2>GDPR compliance</h2>
+      <p>As a company based in Slovenia (EU), we comply with the General Data
+      Protection Regulation (GDPR). Personal data (such as customer email
+      addresses) is processed on the legal basis of legitimate interest in
+      providing the analytics service you have requested. You may exercise your
+      data subject rights by contacting us at the address below.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy from time to time. The "Last updated" date
+      at the top of this page reflects the most recent revision. Material
+      changes will be communicated to you directly.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy or your data, contact
+      us at:</p>
+      <p>
+        <strong>InWave d.o.o.</strong><br>
+        Email: <a href="mailto:admin@inwave-consulting.com">admin@inwave-consulting.com</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 InWave d.o.o. &middot; <a href="./">Home</a>
+    </footer>
+  </div>
+</body>
+</html>

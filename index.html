@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InWave Data Connector — Shopify Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #1a1a2e;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      padding: 48px 0 40px;
+      border-bottom: 1px solid #e8e8ec;
+    }
+    .logo {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #6366f1;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 32px 0 16px;
+      line-height: 1.2;
+      color: #1a1a2e;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #52526b;
+      max-width: 560px;
+    }
+
+    .features {
+      padding: 48px 0;
+      border-bottom: 1px solid #e8e8ec;
+    }
+    .feature {
+      margin-bottom: 32px;
+    }
+    .feature:last-child { margin-bottom: 0; }
+    .feature h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .feature p {
+      font-size: 15px;
+      color: #52526b;
+    }
+
+    .how {
+      padding: 48px 0;
+      border-bottom: 1px solid #e8e8ec;
+    }
+    .how h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .how p {
+      font-size: 15px;
+      color: #52526b;
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      padding: 48px 0;
+    }
+    .contact h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .contact p {
+      font-size: 15px;
+      color: #52526b;
+    }
+    .contact a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+    .contact a:hover { text-decoration: underline; }
+
+    footer {
+      padding: 32px 0;
+      border-top: 1px solid #e8e8ec;
+      font-size: 13px;
+      color: #9393a8;
+    }
+    footer a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">InWave</div>
+      <h1>Data Connector for Shopify</h1>
+      <p class="subtitle">
+        Automated analytics pipeline that extracts your Shopify store data and
+        delivers clean, ready-to-use dashboards — revenue trends, order metrics,
+        and store performance, updated daily.
+      </p>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Read-only access</h3>
+        <p>The app only reads your store data (orders, products, customers). It never
+        modifies, creates, or deletes anything in your Shopify store.</p>
+      </div>
+      <div class="feature">
+        <h3>Daily automated sync</h3>
+        <p>Data is pulled from your store once per day and transformed into
+        business-ready analytics — daily, monthly, and yearly revenue breakdowns,
+        customer counts, and order trends.</p>
+      </div>
+      <div class="feature">
+        <h3>Multi-store support</h3>
+        <p>Connect one or many stores. Each store's data is kept separate and
+        tagged, so you can view them individually or compare across stores on a
+        single dashboard.</p>
+      </div>
+      <div class="feature">
+        <h3>Your data stays yours</h3>
+        <p>Data is stored securely in your own infrastructure. Nothing is shared
+        with third parties. See our <a href="privacy" style="color:#6366f1;">privacy policy</a>
+        for details.</p>
+      </div>
+    </section>
+
+    <section class="how">
+      <h2>How it works</h2>
+      <p>Once installed, the app connects to the Shopify Admin API using secure
+      OAuth authentication. It reads your orders, products, and customer records,
+      processes them through a data pipeline that cleans and validates the data,
+      and outputs business-ready analytics tables.</p>
+      <p>These tables feed directly into your dashboard (Metabase, Power BI, or
+      any BI tool), giving you up-to-date insights into revenue, order volume,
+      and store performance — without manual exports or spreadsheets.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>InWave d.o.o.</strong><br>
+        <a href="mailto:admin@inwave-consulting.com">admin@inwave-consulting.com</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 InWave d.o.o. &middot;
+      <a href="privacy">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
